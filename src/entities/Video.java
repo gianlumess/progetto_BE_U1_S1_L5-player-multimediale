@@ -31,7 +31,9 @@ public class Video extends ElementoMultimediale implements Player, VolumeSetter,
 
     @Override
     public void play() {
-
+        for (int i = 0; i < durata; i++) {
+            System.out.println("Video: " + titolo + "!".repeat(audio) + "*".repeat(luminosita));
+        }
     }
 
     @Override

@@ -16,7 +16,9 @@ public class Audio extends ElementoMultimediale implements Player, VolumeSetter 
 
     @Override
     public void play() {
-
+        for (int i = 0; i < durata; i++) {
+            System.out.println("Registrazione audio: " + titolo + "!".repeat(audio));
+        }
     }
 
     @Override
