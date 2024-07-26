@@ -19,6 +19,7 @@ public class Video extends ElementoMultimediale implements Player, VolumeSetter,
         this.luminosita = luminosita;
     }
 
+    //METODI
     @Override
     public void aumentaLuminosita() {
         luminosita++;

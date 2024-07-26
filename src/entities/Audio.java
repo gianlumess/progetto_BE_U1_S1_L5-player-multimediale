@@ -5,15 +5,17 @@ import interfaces.VolumeSetter;
 
 public class Audio extends ElementoMultimediale implements Player, VolumeSetter {
     //ATTRIBUTI
-    public int audio;
+    public int volume;
     public int durata;
 
-    public Audio(String titolo, int audio, int durata) {
+    //COSTRUTTORE
+    public Audio(String titolo, int volume, int durata) {
         super(titolo);
-        this.audio = audio;
+        this.volume = volume;
         this.durata = durata;
     }
 
+    //METODI
     @Override
     public void play() {
         for (int i = 0; i < durata; i++) {
@@ -23,11 +25,11 @@ public class Audio extends ElementoMultimediale implements Player, VolumeSetter 
 
     @Override
     public void alzaVolume() {
-        audio++;
+        volume++;
     }
 
     @Override
     public void abbassaVolume() {
-        audio--;
+        volume--;
     }
 }

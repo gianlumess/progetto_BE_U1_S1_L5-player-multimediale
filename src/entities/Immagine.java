@@ -7,11 +7,13 @@ public class Immagine extends ElementoMultimediale implements Shower, Luminosita
     //ATTRIBUTI
     public int luminosita;
 
+    //COSTRUTTORE
     public Immagine(String titolo, int luminosita) {
         super(titolo);
         this.luminosita = luminosita;
     }
 
+    //METODI
     @Override
     public void aumentaLuminosita() {
         luminosita++;
