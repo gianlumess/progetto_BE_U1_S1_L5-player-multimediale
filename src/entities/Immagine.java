@@ -28,4 +28,12 @@ public class Immagine extends ElementoMultimediale implements Shower, Luminosita
     public void show() {
         System.out.println("Immagine: " + titolo + "*".repeat(luminosita));
     }
+
+    @Override
+    public String toString() {
+        return "Immagine{" +
+                "titolo='" + titolo + '\'' +
+                ", luminosita=" + luminosita +
+                '}';
+    }
 }

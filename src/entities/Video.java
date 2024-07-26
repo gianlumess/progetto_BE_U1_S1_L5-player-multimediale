@@ -46,4 +46,14 @@ public class Video extends ElementoMultimediale implements Player, VolumeSetter,
     public void abbassaVolume() {
         audio--;
     }
+
+    @Override
+    public String toString() {
+        return "Video{" +
+                "audio=" + audio +
+                ", durata=" + durata +
+                ", luminosita=" + luminosita +
+                ", titolo='" + titolo + '\'' +
+                '}';
+    }
 }
